@@ -28,6 +28,9 @@ def readPdf():
         
         text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200, length_function=len)
         print(f"text splitter {text_splitter}")
+        return text
+    return
+    
 if __name__== '__main__':
     print("came to main")
     app.run(host="0.0.0.0", port=5000, debug=True)
